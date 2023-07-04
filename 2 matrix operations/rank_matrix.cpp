@@ -1,9 +1,9 @@
-//矩阵求秩.cpp
+//鐭╅樀姹傜З.cpp
 #include<cmath>
 #include<iostream>
 using namespace std;
-//a[m][n] 存放m×n矩阵A的值，返回时被破坏
-//函数返回矩阵A的秩 
+//a[m][n] 瀛樻斁m脳n鐭╅樀A鐨勫�硷紝杩斿洖鏃惰鐮村潖
+//鍑芥暟杩斿洖鐭╅樀A鐨勭З 
 int rank(double a[],int m,int n)
 {
 	int i,j,k,nn,is,js,l,ll,u,v;

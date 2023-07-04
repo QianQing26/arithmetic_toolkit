@@ -1,12 +1,12 @@
-//Êµ¾ØÕóµÄQR·Ö½â.cpp
+//å®žçŸ©é˜µçš„QRåˆ†è§£.cpp
 
 #include<iostream>
 #include<cmath>
 using namespace std;
-//a[m][n] ´æ·Åm¡ÁnÊµ¾ØÕóA£¬²¢ÇÒÒªÇóm>=n 
-//·µ»ØÊ±ÆäÓÒÉÏ½Ç´æ·ÅQR·Ö½âÖÐµÄÉÏÈý½ÇÕóR 
-//b[m][m] ·µ»ØQR·Ö½âÖÐµÄÕý½»¾ØÕóQ 
-//º¯Êý·µ»Ø±êÖ¾Öµ£¬Èç¹û·µ»ØÖµÎª0£¬ËµÃ÷Ê§°Ü£¬Èç¹û²»Îª0£¬ËµÃ÷³É¹¦
+//a[m][n] å­˜æ”¾mÃ—nå®žçŸ©é˜µAï¼Œå¹¶ä¸”è¦æ±‚m>=n 
+//è¿”å›žæ—¶å…¶å³ä¸Šè§’å­˜æ”¾QRåˆ†è§£ä¸­çš„ä¸Šä¸‰è§’é˜µR 
+//b[m][m] è¿”å›žQRåˆ†è§£ä¸­çš„æ­£äº¤çŸ©é˜µQ 
+//å‡½æ•°è¿”å›žæ ‡å¿—å€¼ï¼Œå¦‚æžœè¿”å›žå€¼ä¸º0ï¼Œè¯´æ˜Žå¤±è´¥ï¼Œå¦‚æžœä¸ä¸º0ï¼Œè¯´æ˜ŽæˆåŠŸ
 
 int maqr(double a[],int m,int n,double q[])
 {

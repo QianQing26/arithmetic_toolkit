@@ -1,42 +1,42 @@
-//¾ØÕóÇóÄæ.cpp
-//Ê¹ÓÃGauss-Jordan·½·¨Çó½âÄæ¾ØÕó 
+//çŸ©é˜µæ±‚é€†.cpp
+//ä½¿ç”¨Gauss-Jordanæ–¹æ³•æ±‚è§£é€†çŸ©é˜µ 
 #include<iostream>
 #include<camth>
 #include"complex.h"
 using namespace std;
 
-double ffabs(double p) //¼ÆËãÊµÊıµÄ¾ø¶ÔÖµ 
+double ffabs(double p) //è®¡ç®—å®æ•°ç»å¯¹å€¼
 {
 	double q;
 	q=fabs(p);
 	return q;
 } 
 
-double ffabs(complex p) //¼ÆËã¸´ÊıµÄÄ£ 
+double ffabs(complex p) //è®¡ç®—å¤æ•°ç»å¯¹å€¼
 {
 	double q;
 	q=p.cfabs();
 	return q;
 }
 
-double ff(double p)//¼ÆËãÊµÊıµÄµ¹Êı 
+double ff(double p)//è®¡ç®—å®æ•°å€’æ•°
 {
 	double q;
 	q=1.0/p;
 	return q;
 }
 
-complex ff(complex p)//¼ÆËã¸´ÊıµÄµ¹Êı 
+complex ff(complex p)//è®¡ç®—å¤æ•°å€’æ•°
 {
 	complex q;
 	q=complex(1.0,0.0) / p;
 	return q;
 }
 
-//aÎªÔ­¾ØÕó£¬·µ»ØºóÎªÄæ¾ØÕó 
-//nÎª¾ØÕóµÄ½×Êı
-template <class T> //Ä£°åÉùÃ÷TÎªÀàĞÍ²ÎÊı 
-int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0 
+//aä¸ºåŸçŸ©é˜µï¼Œè¿”å›åä¸ºé€†çŸ©é˜µ 
+//nä¸ºçŸ©é˜µçš„é˜¶æ•°
+template <class T> //æ¨¡æ¿å£°æ˜Tä¸ºç±»å‹å‚æ•° 
+int inv(T a,int n)//å¦‚æœçŸ©é˜µå¥‡å¼‚ï¼Œåˆ™è¿”å›æ ‡å¿—å€¼0ï¼Œå¦åˆ™è¿”å›é0 
 {
 	int *is,*js;
 	int i,j,k,l,u,v;
@@ -47,27 +47,27 @@ int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0
 	for(k=0;k<n;k++)
 	{
 		d=0.0;
-		for(i=k;i<n;i++)//Ñ¡Ö÷Ôª 
+		for(i=k;i<n;i++)//Ñ¡ï¿½ï¿½Ôª 
 		for(j=k;j<n;j++)
 		{
 			l=i*n+j;
-			q=ffabs(a[l]);//¼ÆËãÔªËØµÄ¾ø¶ÔÖµ(Ä£)
+			q=ffabs(a[l]);//ï¿½ï¿½ï¿½ï¿½Ôªï¿½ØµÄ¾ï¿½ï¿½ï¿½Öµ(Ä£)
 			if(q>d)
 			{
 				d=q;
 				is[k]=i;
 				js[k]=j;
 			}
-			if(d+1.0 == 1.0)//¾ØÕóÆæÒì 
+			if(d+1.0 == 1.0)//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 			{
 				delete[] is;
 				delete[] js;
-				cout<<"¾ØÕóÆæÒì"<<endl;
+				cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
 				return 0;
 			}
 			if(is[k]!=k)
 			{
-				for(j=0;j<n;j++)//ĞĞ½»»» 
+				for(j=0;j<n;j++)//ï¿½Ğ½ï¿½ï¿½ï¿½ 
 				{
 					u=k*n+j;
 					v=is[k]*n+j;
@@ -78,7 +78,7 @@ int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0
 			}
 			if(js[k]!=k)
 			{
-				for(i=0;i<n;i++)//ÁĞ½»»» 
+				for(i=0;i<n;i++)//ï¿½Ğ½ï¿½ï¿½ï¿½ 
 				{
 					u=i*n+k;
 					v=i*n+js[k];
@@ -88,8 +88,8 @@ int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0
 				}
 			}
 			l=k*n+k;
-			a[l]=ff(a[l]);//¼ÆËã1/a[l]
-			for(j=0;j<n;j++)//¹éÒ»»¯ 
+			a[l]=ff(a[l]);//ï¿½ï¿½ï¿½ï¿½1/a[l]
+			for(j=0;j<n;j++)//ï¿½ï¿½Ò»ï¿½ï¿½ 
 			{
 				if(j!=k)
 				{
@@ -97,7 +97,7 @@ int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0
 					a[u]=a[u]*a[l];
 				}
 			}
-			for(i=0;i<n;i++)//ÏûÔª¼ÆËã 
+			for(i=0;i<n;i++)//ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ 
 			{
 				if(i!=k)
 				{
@@ -121,7 +121,7 @@ int inv(T a,int n)//Èç¹û¾ØÕóÆæÒì£¬Ôò·µ»Ø±êÖ¾Öµ0£¬·ñÔò·µ»Ø·Ç0
 			}
 		}
 	}
-	for(k=n-1;k>=0;k--)//»Ö¸´ĞĞÁĞ½»»» 
+	for(k=n-1;k>=0;k--)//ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ğ½ï¿½ï¿½ï¿½ 
 	{
 		if(js[k]!=k)
 			for(j=0;j<n;j++)

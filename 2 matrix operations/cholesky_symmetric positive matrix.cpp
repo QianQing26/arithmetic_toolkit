@@ -1,10 +1,10 @@
-//¶Ô³ÆÕý¶¨¾ØÕóµÄcholeskey·Ö½â
+//å¯¹ç§°æ­£å®šçŸ©é˜µçš„choleskeyåˆ†è§£
 #include<iostream>
 #include<cmath>
 using namespace std;
-//a[n][n] ´æ·Å¶Ô³ÆÕý¶¨¾ØÕóA
-// ·µ»ØÊ±ÆäÏÂÈý½Ç´æ·Å·Ö½âµÃµ½µÄÏÂÈý½ÇÕóL£¬ÆäÓàÔªËØ¾ùÎª0
-//º¯Êý·µ»Ø±êÖ¾Öµ£¬ÈôµÈÓÚ0£¬Ôò±íÊ¾Ê§°Ü£¬Èô´óÓÚ0£¬Ôò±íÊ¾³É¹¦
+//a[n][n] å­˜æ”¾å¯¹ç§°æ­£å®šçŸ©é˜µA
+// è¿”å›žæ—¶å…¶ä¸‹ä¸‰è§’å­˜æ”¾åˆ†è§£å¾—åˆ°çš„ä¸‹ä¸‰è§’é˜µLï¼Œå…¶ä½™å…ƒç´ å‡ä¸º0
+//å‡½æ•°è¿”å›žæ ‡å¿—å€¼ï¼Œè‹¥ç­‰äºŽ0ï¼Œåˆ™è¡¨ç¤ºå¤±è´¥ï¼Œè‹¥å¤§äºŽ0ï¼Œåˆ™è¡¨ç¤ºæˆåŠŸ
 int chol(double a[],int n)
 {
 	int i,j,k,u,l;

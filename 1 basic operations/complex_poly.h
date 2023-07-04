@@ -1,11 +1,11 @@
-//¸´¶àÏîÊ½.h
+//å¤å¤šé¡¹å¼.h
 #ifndef _COM_POLY_
 #define _COM_POLY_
 
 #include<iostream>
 #include<fstream>
 #include<cmath>
-#include"¸´ÊıÀà.h"
+#include"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.h"
 using namespace std;
 
 class com_poly:public complex
@@ -14,7 +14,7 @@ class com_poly:public complex
 		int N;
 		complex *p;
 	public:
-		com_poly(int nn=0,complex *pp=NULL)//¹¹Ôìº¯Êı 
+		com_poly(int nn=0,complex *pp=NULL)//æ„é€ å‡½æ•°
 		{
 			N=nn;
 			p=pp;
@@ -25,11 +25,11 @@ class com_poly:public complex
 		void com_poly_div(com_poly&,com_poly&,com_poly&); 
 };
  
-void com_poly::input()//¼üÅÌÊäÈë¶àÏîÊ½¸´ÏµÊı 
+void com_poly::input()//è¾“å…¥å¤šé¡¹å¼
 {
 	int i;
 	double a,b;
-	cout<<"¸´¶àÏîÊ½¸´ÏµÊı£º"<<endl;
+	cout<<"å¤šé¡¹å¼å¤ç³»æ•°"<<endl;
 	for(i=0;i<=N;i++)
 	{
 		cout<<"p("<<i<<") = ";
@@ -39,7 +39,7 @@ void com_poly::input()//¼üÅÌÊäÈë¶àÏîÊ½¸´ÏµÊı
 	return;
 }
 
-complex com_poly::poly_value(complex x)
+complex com_poly::poly_value(complex x)//æ±‚å€¼
 {
 	int k;
 	complex u;
@@ -52,7 +52,7 @@ complex com_poly::poly_value(complex x)
 }
 
 
-void com_poly::com_poly_mul(com_poly& q, com_poly& s)  
+void com_poly::com_poly_mul(com_poly& q, com_poly& s) //ç›¸ä¹˜
 {
     int i,j;
     complex tmp;
@@ -66,7 +66,7 @@ void com_poly::com_poly_mul(com_poly& q, com_poly& s)
 	return ;
 }
 
-void com_poly::com_poly_div(com_poly& q, com_poly& s, com_poly& r)
+void com_poly::com_poly_div(com_poly& q, com_poly& s, com_poly& r)//ç›¸é™¤
 {
 	int i,j,mm,ll;
 	complex tmp;

@@ -1,4 +1,4 @@
-//Êµ¶àÏîÊ½.h
+//å®å¤šé¡¹å¼.h
 
 #ifndef _POLY_
 #define _POLY_
@@ -11,11 +11,11 @@ using namespace std;
 class poly
 {
 	private:
-		int N;//¶àÏîÊ½ÏµÊı
-		double *p;//¶àÏîÊ½ÏµÊı´¢´æ¿Õ¼äÊ×µØÖ·
-	
+		int N;//å¤šé¡¹å¼ç³»æ•°
+		double *p;//åŸºåœ°å€
+
 	public:
-		poly(int nn=0,double *pp=NULL)//¹¹Ôìº¯Êı
+		poly(int nn=0,double *pp=NULL)//æ„é€ å‡½æ•°
 		{
 			N=nn;
 			p=pp;	
@@ -26,10 +26,10 @@ class poly
 		void poly_div(poly&,poly&,poly&);
 }; 
 
-void poly::input()//ÊäÈë¶àÏîÊ½ÏµÊı 
+void poly::input()//è¾“å…¥å¤šé¡¹å¼
 {
 	int i;
-	cout<<"¶àÏîÊ½ÏµÊı"<<endl;
+	cout<<"å¤šé¡¹å¼ç³»æ•°"<<endl;
 	for(i=0;i<N;i++)
 	{
 		cout<<"(p"<<i<<")=";
@@ -37,7 +37,7 @@ void poly::input()//ÊäÈë¶àÏîÊ½ÏµÊı
 	}
 }
 
-double poly::poly_value(double x)//¶àÏîÊ½ÇóÖµp(x)
+double poly::poly_value(double x)
 {
 	int k;
 	double u;
@@ -49,7 +49,7 @@ double poly::poly_value(double x)//¶àÏîÊ½ÇóÖµp(x)
 	return u;
 }
 
-void poly::poly_mul(poly& q,poly &s)//¶àÏîÊ½³Ë·¨s=p*q
+void poly::poly_mul(poly& q,poly &s)//å¤šé¡¹å¼ç›¸ä¹˜
 {
 	int i,j;
 	for(i=0;i<=s.N;i++)
@@ -60,7 +60,7 @@ void poly::poly_mul(poly& q,poly &s)//¶àÏîÊ½³Ë·¨s=p*q
 	return;
 } 
 
-void poly::poly_div(poly& q,poly& s,poly& r)//¶àÏîÊ½Ïà³ı s=p/q+r 
+void poly::poly_div(poly& q,poly& s,poly& r)//å¤šé¡¹å¼ç›¸é™¤ s=p/q+r 
 {
 	int i,j,mm,ll;
 	for(i=0;i<=s.N;i++)s.p[i]=0.0;

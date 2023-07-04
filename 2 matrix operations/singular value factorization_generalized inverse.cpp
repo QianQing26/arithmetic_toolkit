@@ -1,16 +1,7 @@
 #include<cmath>
 #include<iostream>
-#include "实矩阵的奇异值分解.cpp"
-
-  using namespace std;
-//a[m]n]     存放m×n的实矩阵A。
-//           返回时其对角线给出奇异值（以非递增次序排列），其余元素均为0。
-//aa[n][m]   返回A的广义逆  。
-//eps        给定的精度要求。
-//u[m][m]    返回左奇异向量U。
-//v[n][n]    返回右奇异向量V。
-//ka         其值为max(m，n)＋1。
-  //函数返回标志值。若小于0，则表示失败；若大于0，则表示正常。
+#include "singular value factorization.cpp"
+using namespace std;
 int ginv(double a[],int m,int n,double aa[],double eps,double u[],double v[],int ka)
 { 
     int i,j,k,l,t,p,q,f;

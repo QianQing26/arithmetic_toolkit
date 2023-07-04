@@ -1,25 +1,25 @@
-//¾ØÕóÏà³Ë.cpp
+//çŸ©é˜µç›¸ä¹˜.cpp
 
 #include<iostream>
 #include<cmath>
-#include"¸´ÊıÀà.h"
+#include"complex.h"
 using namespace std;
 
-double init(double p)//ÊµÊı³õÊ¼»¯ 
+double init(double p)//å®æ•°åˆå§‹åŒ– 
 {
 	p=0.0;
 	return p;
 }
 
-complex init(complex p)//¸´Êı³õÊ¼»¯ 
+complex init(complex p)//å¤æ•°åˆå§‹åŒ– 
 {
 	p=complex(0.0,0.0);
 	return p;
 }
 
-//a,ma,na  ¾ØÕóA[ma][na]
-//b,mb,nb  ¾ØÕóB[mb][nb] 
-//c,ma,nb  ³Ë»ı¾ØÕó C[ma][nb]=A[ma][na]*B[mb][nb]
+//a,ma,na  çŸ©é˜µA[ma][na]
+//b,mb,nb  çŸ©é˜µB[mb][nb] 
+//c,ma,nb  ä¹˜ç§¯çŸ©é˜µ C[ma][nb]=A[ma][na]*B[mb][nb]
 template<class T>
 void tmul(T a[],int ma,int na,T b[],int mb,int nb,T c[])
 {
@@ -27,14 +27,14 @@ void tmul(T a[],int ma,int na,T b[],int mb,int nb,T c[])
 	T tmp;
 	if(na!=mb)
 	{
-		cout<<"¾ØÕó²»ÄÜÏà³Ë"<<endl;
+		cout<<"çŸ©é˜µä¸èƒ½ç›¸ä¹˜"<<endl;
 		return;
 	}
 	for(i=0;i<ma;i++)
 		for(j=0;j<nb;j++)
 		{
 			u=i*nb+j;
-			c[u]=init(c[u]);//³Ë»ı¾ØÕóÔªËØ³õÊ¼»¯ 
+			c[u]=init(c[u]);//çŸ©é˜µå…ƒç´ åˆå§‹åŒ–
 			for(k=0;k<mb;k++)
 			{
 				tmp=a[i*na+k]*b[k*nb+j];

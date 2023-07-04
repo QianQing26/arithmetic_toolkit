@@ -1,4 +1,4 @@
-//Ëæ»úÊıÀà.h
+//éšæœºæ•°ç±».h
 #ifndef _RND_
 #define _RND_
 
@@ -10,13 +10,13 @@ using namespace std;
 class RND
 {
 	private:
-		int R;//Ëæ»úÊıÖÖ×Ó
+		int R;//éšæœºæ•°ç§å­
 	public:
-		RND(int r=1)//¹¹Ôìº¯Êı 
+		RND(int r=1)//æ„é€ å‡½æ•°
 		{
 			R=r;
 		}
-		double rnd1()//²úÉú0~1¾ùÔÈ·Ö²¼µÄÒ»¸öËæ»úÊı 
+		double rnd1()//0-1å‡åŒ€åˆ†å¸ƒçš„éšæœºæ•°
 		{
 			int m;
 			double s,u,v,p;
@@ -32,7 +32,7 @@ class RND
 			return p;
 		}
 		
-		double rndab(int a,int b)//²úÉúÇø¼ä[a,b]ÄÚ¾ùÔÈ·Ö²¼µÄËæ»úÊı 
+		double rndab(int a,int b)//a-bå‡åŒ€åˆ†å¸ƒçš„éšæœºæ•°
 		{
 			int i,j,k,m,p;
 			k=b-a+1;
@@ -56,7 +56,7 @@ class RND
 			return(p);
 		}
 		
-		double rndg(double u,double g)//²úÉú·ûºÏÕıÌ¬·Ö²¼ N(u,g^2) µÄÒ»¸öËæ»úÊı
+		double rndg(double u,double g)//æœä» N(u,g^2) çš„ä¸€ä¸ªéšæœºæ•°
 		{
 			int i,m;
 			double s,w,v,t;

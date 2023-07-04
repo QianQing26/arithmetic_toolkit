@@ -1,10 +1,10 @@
-//¾ØÕóµÄÈı½Ç·Ö½â.cpp
+//çŸ©é˜µçš„ä¸‰è§’åˆ†è§£.cpp
 #include<iostream>
 #include<cmath>
 using namespace std;
-//a[n][n] ´¢´æÔ­±¾µÄn½×¾ØÕóA£¬·µ»ØÊ±´¢´æ¾ØÕóQ
-//l[n][n] ·µ»ØÏÂÈı½Ç¾ØÕóL
-//u[n][n] ·µ»ØÉÏÈı½Ç¾ØÕóU
+//a[n][n] å‚¨å­˜åŸæœ¬çš„né˜¶çŸ©é˜µAï¼Œè¿”å›æ—¶å‚¨å­˜çŸ©é˜µQ
+//l[n][n] è¿”å›ä¸‹ä¸‰è§’çŸ©é˜µL
+//u[n][n] è¿”å›ä¸Šä¸‰è§’çŸ©é˜µU
 int lluu(double a[],int n,double l[],double u[])
 {
 	int i,j,k,w,v,ll;

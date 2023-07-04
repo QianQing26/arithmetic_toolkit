@@ -1,4 +1,4 @@
-//¸´ÊıÀà.h
+//å¤æ•°ç±».h
 
 #ifndef _COM_
 #define _COM_
@@ -9,37 +9,37 @@ using namespace std;
 class complex
 {
 	private:
-		double R;//Êµ²¿ 
-		double I;//Ğé²¿
+		double R;//å®éƒ¨
+		double I;//è™šéƒ¨
 	
 	public:
-		complex(double real=0,double imag=0)//¹¹Ôìº¯Êı
+		complex(double real=0,double imag=0)//æ„é€ å‡½æ•°
 		{
 			R=real;
 			I=imag;	
 		}
 		
-		void prt()//¸´ÊıÊä³ö 
+		void prt()//æ‰“å°
 		{
 			cout<<"("<<R<<","<<I<<")";	
 			return;
 		}
 		
-		double cfabs()//¸´ÊıÄ£ 
+		double cfabs()//å¤æ•°çš„æ¨¡ 
 		{
 			double y;
 			y=sqrt(R*R+I*I);
 			return y;
 		}
 		
-		double angle()//¸´Êı·ù½Ç 
+		double angle()//å¹…è§’ 
 		{
 			double y;
 			y=atan2(I,R);
 			return y;
 		}
 		
-		complex operator + (complex& c2)//¸´Êı¼Ó·¨ 
+		complex operator + (complex& c2)//å¤æ•°åŠ æ³•
 		{
 			complex c;
 			c.R=R+c2.R;
@@ -47,7 +47,7 @@ class complex
 			return c;
 		}
 		
-		complex operator - (complex& c2)//¸´Êı¼õ·¨ 
+		complex operator - (complex& c2)//å¤æ•°å‡æ³• 
 		{
 			complex c;
 			c.R=R-c2.R;
@@ -55,7 +55,7 @@ class complex
 			return c;
 		}
 		
-		complex operator * (complex& c2)//¸´Êı³Ë·¨ 
+		complex operator * (complex& c2)//å¤æ•°ä¹˜æ³•
 		{
 			complex c;
 			c.R=R*c2.R-I*c2.I;
@@ -63,7 +63,7 @@ class complex
 			return c;
 		}
 		
-		complex operator / (complex& c2)//¸´Êı³ı·¨ 
+		complex operator / (complex& c2)//å¤æ•°é™¤æ³• 
 		{
 			complex c;
 			double p,q,s,w;
@@ -85,7 +85,7 @@ class complex
 			return c;
 		}
 		
-		complex cpower(int n)//¸´ÊıÃİ 
+		complex cpower(int n)//å¤æ•°ä¹˜æ–¹
 		{
 			complex c;
 			double r,q;
@@ -101,7 +101,7 @@ class complex
 			return c;
 		}
 		
-		void croot(int n,complex *p)//¸´Êı¿ª¸ù 
+		void croot(int n,complex *p)//å¤æ•°å¼€æ ¹
 		{
 			complex c;
 			int k;
@@ -123,7 +123,7 @@ class complex
 			}
 		}
 		
-		complex cexp()//ÒÔeÎªµ×µÄ¸´ÊıÖ¸Êı 
+		complex cexp()//å¤æ•°çš„eæ¬¡æ–¹
 		{
 			complex c;
 			double p;
@@ -133,7 +133,7 @@ class complex
 			return c;
 		}
 		
-		complex clog()//¸´Êı×ÔÈ»¶ÔÊı 
+		complex clog()//å¤æ•°è‡ªç„¶å¯¹æ•° 
 		{
 			complex c;
 			double p;
@@ -144,7 +144,7 @@ class complex
 			return c;
 		}
 		
-		complex csin()//¸´ÊıÕıÏÒ 
+		complex csin()//sin 
 		{
 			complex c;
 			double p,q;
@@ -155,7 +155,7 @@ class complex
 			return c;
 		}
 		
-		complex ccos()//¸´ÊıÓàÏÒ 
+		complex ccos()//cos
 		{
 			complex c;
 			double p,q;

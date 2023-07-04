@@ -1,12 +1,12 @@
-//¶Ô³ÆÕý¶¨¾ØÕóÇóÄæ.cpp
+//å¯¹ç§°æ­£å®šçŸ©é˜µæ±‚é€†.cpp
 
 #include<iostream>
 #include<cmath>
-#include"¸´ÊýÀà.h"
+#include"å¤æ•°ç±».h"
 using namespace std;
 
-//a[n][n] ÓÃÀ´´æ·ÅÕý¶¨¾ØÕó£¬²¢ÇÒ·µ»ØÄæ¾ØÕóµ½¸ÃÊý×é
-//º¯Êý·µ»Ø±êÖ¾Öµ µÈÓÚ0±íÊ¾Ê§°Ü£¬´óÓÚ0±íÊ¾³É¹¦
+//a[n][n] ç”¨æ¥å­˜æ”¾æ­£å®šçŸ©é˜µï¼Œå¹¶ä¸”è¿”å›žé€†çŸ©é˜µåˆ°è¯¥æ•°ç»„
+//å‡½æ•°è¿”å›žæ ‡å¿—å€¼ ç­‰äºŽ0è¡¨ç¤ºå¤±è´¥ï¼Œå¤§äºŽ0è¡¨ç¤ºæˆåŠŸ
 int ssgj(double a[],int n)
 {
 	int i,j,k,m;

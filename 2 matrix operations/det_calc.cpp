@@ -1,9 +1,9 @@
-//ĞĞÁĞÊ½ÇóÖµ.cpp
+//è¡Œåˆ—å¼æ±‚å€¼.cpp
 #include<iostream>
 #include<cmath>
 using namespace std;
-//a[n][n]  ´æ·Å·½ÕóAµÄÔªËØ£¬·µ»ØÊ±±»ÆÆ»µ
-//º¯Êı·µ»ØĞĞÁĞÊ½µÄÖµ
+//a[n][n]  å­˜æ”¾æ–¹é˜µAçš„å…ƒç´ ï¼Œè¿”å›æ—¶è¢«ç ´å
+//å‡½æ•°è¿”å›è¡Œåˆ—å¼çš„å€¼
 double sdet(double a[],int n)
 {
 	int i,j,k,is,l,u,v;
