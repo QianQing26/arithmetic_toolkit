@@ -1,11 +1,11 @@
-//复多项式.h
+//复多项式
 #ifndef _COM_POLY_
 #define _COM_POLY_
 
 #include<iostream>
 #include<fstream>
 #include<cmath>
-#include"������.h"
+#include"complex.h"
 using namespace std;
 
 class com_poly:public complex

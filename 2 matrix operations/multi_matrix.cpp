@@ -1,4 +1,4 @@
-//矩阵相乘.cpp
+//矩阵相乘
 
 #include<iostream>
 #include<cmath>
@@ -22,6 +22,7 @@ complex init(complex p)//复数初始化
 //c,ma,nb  乘积矩阵 C[ma][nb]=A[ma][na]*B[mb][nb]
 template<class T>
 void tmul(T a[],int ma,int na,T b[],int mb,int nb,T c[])
+//结果储存在c中
 {
 	int i,j,k,u;
 	T tmp;

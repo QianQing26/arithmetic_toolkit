@@ -36,7 +36,7 @@ complex ff(complex p)//计算复数倒数
 //a为原矩阵，返回后为逆矩阵 
 //n为矩阵的阶数
 template <class T> //模板声明T为类型参数 
-int inv(T a,int n)//如果矩阵奇异，则返回标志值0，否则返回非0 
+int inv(T a,int n) //返回矩阵奇异标志值：如果矩阵奇异，则返回标志值0，否则返回非0 
 {
 	int *is,*js;
 	int i,j,k,l,u,v;

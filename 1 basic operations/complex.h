@@ -1,5 +1,4 @@
-//复数类.h
-
+//复数类
 #ifndef _COM_
 #define _COM_
 

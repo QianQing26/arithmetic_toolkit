@@ -3,8 +3,8 @@
 #include<cmath>
 using namespace std;
 //a[n][n]  存放方阵A的元素，返回时被破坏
-//函数返回行列式的值
 double sdet(double a[],int n)
+//函数返回行列式的值
 {
 	int i,j,k,is,l,u,v;
 	double f,det,q,d;

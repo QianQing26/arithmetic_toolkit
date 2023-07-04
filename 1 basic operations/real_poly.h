@@ -1,5 +1,4 @@
-//实多项式.h
-
+//实多项式
 #ifndef _POLY_
 #define _POLY_
 

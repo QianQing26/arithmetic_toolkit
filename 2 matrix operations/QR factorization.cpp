@@ -1,4 +1,4 @@
-//实矩阵的QR分解.cpp
+//实矩阵的QR分解
 
 #include<iostream>
 #include<cmath>
@@ -6,9 +6,9 @@ using namespace std;
 //a[m][n] 存放m×n实矩阵A，并且要求m>=n 
 //返回时其右上角存放QR分解中的上三角阵R 
 //b[m][m] 返回QR分解中的正交矩阵Q 
-//函数返回标志值，如果返回值为0，说明失败，如果不为0，说明成功
 
 int maqr(double a[],int m,int n,double q[])
+//函数返回标志值，如果返回值为0，说明失败，如果不为0，说明成功
 {
 	int i,j,k,l,nn,p,jj;
     double u,alpha,w,t;

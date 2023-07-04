@@ -3,6 +3,7 @@
 #include "singular value factorization.cpp"
 using namespace std;
 int ginv(double a[],int m,int n,double aa[],double eps,double u[],double v[],int ka)
+//函数返回成功标志值1
 { 
     int i,j,k,l,t,p,q,f;
     i=muav(a,m,n,u,v,eps,ka);

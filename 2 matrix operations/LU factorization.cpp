@@ -1,4 +1,4 @@
-//矩阵的三角分解.cpp
+//矩阵的三角分解.
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -6,6 +6,7 @@ using namespace std;
 //l[n][n] 返回下三角矩阵L
 //u[n][n] 返回上三角矩阵U
 int lluu(double a[],int n,double l[],double u[])
+//返回成功标志值1
 {
 	int i,j,k,w,v,ll;
 	for(k=0; k<n-1; k++)

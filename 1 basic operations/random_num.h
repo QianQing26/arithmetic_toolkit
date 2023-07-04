@@ -1,4 +1,4 @@
-//随机数类.h
+//随机数类
 #ifndef _RND_
 #define _RND_
 

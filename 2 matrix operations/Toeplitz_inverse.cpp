@@ -6,9 +6,9 @@ using namespace std;
 //t[n] 存放T型矩阵中的元素t[0]~t[n-1]
 //tt[n] 后n-1个元素存放T型矩阵中tt[1]~tt[n-1]
 //b[n][n] 返回T型矩阵的逆矩阵
-//函数返回标志值，0表示失败，大于零表示成功
 
 int trch(double t[],double tt[],int n,double b[])
+//函数返回标志值，0表示失败，大于零表示成功
 {
 	int i,j,k;
 	double a,s,*c,*r,*p;

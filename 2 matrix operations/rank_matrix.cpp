@@ -3,8 +3,8 @@
 #include<iostream>
 using namespace std;
 //a[m][n] 存放m×n矩阵A的值，返回时被破坏
-//函数返回矩阵A的秩 
 int rank(double a[],int m,int n)
+//函数返回矩阵A的秩 
 {
 	int i,j,k,nn,is,js,l,ll,u,v;
 	double q,d;

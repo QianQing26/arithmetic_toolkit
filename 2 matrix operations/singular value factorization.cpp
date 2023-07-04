@@ -10,9 +10,9 @@ using namespace std;
 //v[n][n]   返回右奇异向量VT
 //eps       给出的精度要求
 //ka        其值为max(m,n)+1
-//函数返回标志值，，如果小于0，则表示失败；如果大于0，则表示正常
 
 int muav(double a[], int m, int n, double u[], double v[], double eps, int ka)
+//函数返回标志值，，如果小于0，则表示失败；如果大于0，则表示正常
 {
     int i,j,k,l,it,ll,kk,ix,iy,mm,nn,iz,m1,ks;
     double d,dd,t,sm,sm1,em1,sk,ek,b,c,shh,fg[2],cs[2];

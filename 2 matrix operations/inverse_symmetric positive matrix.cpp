@@ -2,12 +2,12 @@
 
 #include<iostream>
 #include<cmath>
-#include"复数类.h"
+#include"complex.h"
 using namespace std;
 
 //a[n][n] 用来存放正定矩阵，并且返回逆矩阵到该数组
-//函数返回标志值 等于0表示失败，大于0表示成功
 int ssgj(double a[],int n)
+//函数返回标志值 等于0表示失败，大于0表示成功
 {
 	int i,j,k,m;
 	double w,g,*b;
